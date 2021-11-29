@@ -95,11 +95,44 @@ color: #2196F3;
   animation-delay: 500ms;
   
 }
+/* ICONS SVG HEADER */
+.e-mail .icon-mail {
+  width: 44px;
+}
+
+.icon-mail {
+position: absolute;
+top: 0;
+left: -26px;
+margin: 0;
+padding: 0;
+width: 12px;
+height: 16px;
+fill: rgba(117, 117, 117, 1);
+}
+.icon-phone {
+top: 0;
+left: -20px;
+margin: 0;
+padding: 0;
+position: absolute;
+width: 10px;
+height: 16px;
+fill: rgba(117, 117, 117, 1);
+}
+.icon-mail:hover {
+fill: #2196f3; 
+}
+.icon-phone:hover {
+fill: #2196f3;
+}
 /* Add style focus for adittional block */
 .list-tel .tittle:focus,
 .e-mail:focus {
   color: #080545;
 }
+
+
 h3 {
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -398,51 +431,38 @@ font-style: normal;
 }
 .second-site-unit {
   display: flex;
-  flex-direction: row;
-  
-  align-items: baseline;
-  text-align: center;
+  margin-left: auto;
 }
 .nav-container  {
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
   flex-direction: row;
   align-items: baseline;
-  text-align: center;
 }
 .box {
  display: flex; 
 }
 /* Margin for header */
 .nav-container .page-for-logo {
-  padding-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
-  vertical-align: middle;
 }
 .link-1 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  padding-left: 50px;
   transition-property: background-color;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-delay: 500ms;
-
 }
 
-.item-1 { padding-right: 50px;}
 .link {
  padding-top: 32px;
  padding-bottom: 32px;
- padding-right: 50px;
- padding-left: 50px;
 }
 .second-site-unit .contact {
- padding-left: 159px;
- padding-right: 50px;
- padding-top: 32px;
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ margin-left: auto;
  vertical-align: middle;
  transition-property: background-color;
  transition-duration: 250ms ;
@@ -453,8 +473,9 @@ font-style: normal;
 
 }
 .second-site-unit > .contact-1 {
- padding-top: 32px;
- padding-left: 0; 
+ display: flex;
+ align-items: center;
+ justify-content:baseline;
  vertical-align: middle;
  transition-property: background-color;
  transition-duration: 250ms ;
@@ -462,7 +483,13 @@ font-style: normal;
  animation-delay: 500ms;
 
 }
-
+/* Add ident for li */
+.second-site-unit li {
+  margin-right: 50px;
+}
+.second-site-unit li:last-child {
+  margin-right: 0px;
+}
 /* Start wrapper padding */
 .wrapper .button {
 padding: 0px;
@@ -1111,9 +1138,8 @@ color: #ffffff;
 }
 /* Margin for header */
 .logo {
-  padding-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
 }
  .dif-page {
   padding-top: 32px;
@@ -1529,12 +1555,20 @@ margin-bottom: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
+.site-nav {
+  margin-left: 93px;
+}
+.site-nav li {
+  margin-right: 50px;
+}
+.site-nav li:last-of-type {
+  margin-right: 0px;
+}
 /* Backlight Pages */
 /* Add backlights */
 .site-nav .current:after  {
   position: relative;
-  top: 25px;
+  top: 23px;
   color: #2196F3;
   cursor: pointer;
   max-width: 48px;
@@ -1619,12 +1653,12 @@ position: relative;
 .icon-mail {
 position: absolute;
 top: 0;
-left: -22px;
+left: -26px;
 margin: 0;
 padding: 0;
-width: 12px;
-height: 16px;
-color: #2196F3;
+max-width: 16px;
+max-height: 12px;
+
 }
 .icon-phone {
 top: 0;
@@ -1632,8 +1666,8 @@ left: -20px;
 margin: 0;
 padding: 0;
 position: absolute;
-width: 10px;
-height: 16px;
-fill: #2196f3;
+max-width: 10px;
+max-height: 16px;
+
 }
 
