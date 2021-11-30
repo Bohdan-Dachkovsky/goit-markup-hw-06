@@ -14,6 +14,9 @@ ul {
 a {
   text-decoration: none;
 }
+body {
+  font-family: Roboto, sans-serif;
+}
 h2 {
   display: block;
   font-size: 1.5em;
@@ -51,21 +54,20 @@ ul {
 }
 /* Шрифт навигации */
 .site-nav .item-1 > a {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
-  transition-timing-function: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  color: rgba(33, 150, 243, 1);
+  transition-timing-function: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 /* Add ps-style focus for item1 */
 .site-nav .item-1 a:focus {
   color: #2196f3;
+  transition-timing-function: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 /* Шрифт навигации */
 .site-nav a {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -112,7 +114,6 @@ fill: var( --radical-light-color);
 
 /* Дополнительная навигация */
 .e-mail {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -127,6 +128,7 @@ fill: var( --radical-light-color);
 /* ICONS SVG HEADER */
 .e-mail .icon-mail {
   width: 44px;
+  vertical-align: middle;
 }
 
 .icon-mail {
@@ -138,6 +140,7 @@ padding: 0;
 width: 12px;
 height: 16px;
 fill: rgba(117, 117, 117, 1);
+
 }
 .icon-phone {
 top: 0;
@@ -147,13 +150,16 @@ padding: 0;
 position: absolute;
 width: 10px;
 height: 16px;
+vertical-align: middle;
 fill: rgba(117, 117, 117, 1);
 }
 .icon-mail:hover {
 fill: #2196f3; 
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-phone:hover {
 fill: #2196f3;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Add style focus for adittional block */
 .list-tel .tittle:focus,
@@ -170,7 +176,6 @@ h3 {
 }
 /* Дополнительная навигация */
 .tittle {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -179,7 +184,6 @@ h3 {
   color: var(--radical-light-colorr);
 }
 .list .list-tel {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -194,11 +198,9 @@ h3 {
 
 }
  .list .e-mail {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-   
+  font-size: 14px;   
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -228,7 +230,6 @@ h3, h4 {
   letter-spacing: 0.03em;
 }
 h4 {
-font-family: Roboto, sans-serif;  
 font-size: 36px;
 font-weight: 700;
 text-align: center;
@@ -265,7 +266,6 @@ font-style: normal;
 .wrapper .first-unit {
   display: flex;
   word-wrap: break-word;
-  font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 44px;
   text-transform: uppercase;
@@ -423,6 +423,14 @@ font-style: normal;
 
 
 /* Start flexbox model */
+  .icon-client > h2 {
+  font-weight: 700;
+  line-height: 1.17;
+  font-size: 36px;
+  font-style: normal;
+  margin-bottom: 50px;
+  color: rgba(33, 33, 33, 1);
+  }
   .customers-of-companies {
   width: 1200px;
   padding-left: 15px;
@@ -501,10 +509,7 @@ font-style: normal;
   animation-delay: 500ms;
 }
 
-.link {
- padding-top: 32px;
- padding-bottom: 32px;
-}
+
 .second-site-unit .contact {
  display: flex;
  align-items: center;
@@ -600,6 +605,13 @@ margin-inline-start: 0px;
 margin-inline-end: 0px;
 padding-inline-start: 0px;
 }
+.link-to-networks .icon-svg .networks:hover {
+  fill: rgba(255, 255, 255, 1);
+}
+.icon-svg:hover .networks {
+ fill: rgba(255, 255, 255, 1); 
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .icon-svg {
   display: inline-flex;
   justify-content: center;
@@ -614,8 +626,7 @@ padding-inline-start: 0px;
   flex-wrap: nowrap;
   transition-property: background-color;
   transition-duration: 250ms ;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .link-to-networks li {
   margin-right: 10px;
@@ -627,6 +638,18 @@ padding-inline-start: 0px;
 .section .customers {
   display: flex;
 }
+ .customers .figure:hover{
+  border: 1px solid rgba(33, 150, 243, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.section .customers li:hover .figure svg {
+  fill: rgba(33, 150, 243, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.section .customers li:hover {
+border: rgba(33, 150, 243, 1);
+transition: border 250m cubic-bezier(0.4, 0, 0.2, 1); 
+}
  .figure {
   width: 192px;
   height: 72px;
@@ -637,6 +660,7 @@ padding-inline-start: 0px;
   text-decoration: none;
   border: 1px solid #AFB1B8;
 }
+
 .customers{
   margin: 0;
   padding: 0;
@@ -667,26 +691,32 @@ padding-inline-start: 0px;
 .company {
   width: 106px;
   height: 60px; 
+  fill:rgba(175, 177, 184, 1);
 }
 .company-2 {
-   width: 106px;
+  width: 106px;
   height: 60px; 
+  fill:rgba(175, 177, 184, 1);
 }
 .company-3 {
-   width: 106px;
+  width: 106px;
   height: 60px;
+  fill:rgba(175, 177, 184, 1);
 }
 .company-4 {
   width: 106px;
   height: 60px; 
+  fill:rgba(175, 177, 184, 1);
 }
 .company-5 {
   width: 106px;
   height: 60px;
+  fill:rgba(175, 177, 184, 1);
 }
 .company-6 {
   width: 106px;
   height: 60px;
+  fill:rgba(175, 177, 184, 1);
 }
 /* Footer */
 
@@ -701,7 +731,8 @@ color: #ffffff;
 }
 
 .list-employee a:hover {
-   background-color: #2196f3;
+  background-color: #2196f3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bottom-list-icon a:hover {
    background-color: #2196f3;
@@ -717,10 +748,7 @@ color: #ffffff;
 .below-icons {
   width: 20px;
   height: 20px;
-  vertical-align: middle;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-top: 12px;
+  fill: rgba(255, 255, 255, 1);
 }
 .bottom-list-icon {
   margin-left: 70px;
@@ -728,11 +756,14 @@ color: #ffffff;
 
 .link-icon {
   display: inline-block;
-  background-color: #4241413d;
+  background-color: rgba(117, 117, 117, 1);
   width: 44px;
   height: 44px;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style:none;
   border-radius: 50%;
   margin-bottom: 30px;
@@ -837,8 +868,10 @@ text-transform: uppercase;
 }
 .worker-list .picture__desctop::after {
   display: block;
-  min-width: 270px
-  height: 70px;
+  width: 270px
+  max-height: 70px;
+  bottom: -50px;
+  z-index: -1;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(47, 48, 58, 0.8);
   content: "ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ"; 
@@ -866,6 +899,9 @@ text-transform: uppercase;
  display: flex;
  align-items: center;
  justify-content: center;
+}
+.link-to-networks li a {
+  fill: rgba(175,177,184,1);
 }
 .subtitle-1 {
 text-align: center;
