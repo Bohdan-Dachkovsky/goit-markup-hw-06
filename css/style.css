@@ -467,6 +467,13 @@ font-style: normal;
   margin-left: auto;
   margin-right: auto;
 }
+.header {
+  width: 1600px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
 .bussines-box {
  width: 1600px;
  margin-left: auto;
@@ -1202,16 +1209,27 @@ color: #ffffff;
 *no-italic {
   font-style: normal;
 }
-.container-1 {
+.container-1  {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-
+.main-container {
+  margin-top: 94px;
+}
+.sub-nav-unit .title {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.sub-nav-unit .title:last-child{
+  margin-right: 0px;
+}
 .sub-nav-unit {
   display: flex;
-  justify-content: flex-end;
+  align-items: baseline;
+  justify-content: center;
   height: 100%;
  
 }
@@ -1221,7 +1239,7 @@ color: #ffffff;
   padding: 0;
   text-align: center;
   justify-content: center;
-  padding-left: 160px;
+  margin-left: auto;
 }
 .net-menu {
   display: flex;
@@ -1233,6 +1251,11 @@ color: #ffffff;
   text-align: center;
   align-content: center;
 }
+.net-menu .logo {
+  display: flex;
+  align-items: center;
+}
+
 /* Margin for header */
 .logo {
   display: flex;
@@ -1241,13 +1264,10 @@ color: #ffffff;
  .dif-page {
   padding-top: 32px;
   padding-bottom: 32px;
-  padding: 50px;
 }
 .title-1 {
  padding-top: 32px;
  padding-bottom: 32px;
- padding-left: 50px;
- 
 }
 
 .sub-iteam-unit .town {
@@ -1266,7 +1286,7 @@ align-items: center;
 align-content: center;
 justify-content: center;
 vertical-align: middle;
-padding-bottom: 50px;
+margin-bottom: 50px;
 }
 .btn-option-size-first {
 font-family: Roboto, sans-serif;
@@ -1491,9 +1511,9 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button-close {
     position: relative;
-    top: 8px;
-    right: 8px;
-    width: 30px;
+    top: -555.26px;
+    right: -472.01px;
+    max-width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1503,18 +1523,16 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
     display: flex;
 }
-.modal-button-close {
+.modal-button-close > svg > use {
     position: absolute;
-    top: 15px;
-    width: 20px;
-    vertical-align: middle;
+    width: 11px;
+    height: 11px;
 }
 .close {
-  display: inline-block;
-  width: 11px;
-  height: 11px;
+  display: block;
+  max-width: 11px;
+  max-height: 11px;
   color: #212121;
-  z-index: 1;
 }
 /* Continue modal-form */
 .form-field {
@@ -1683,7 +1701,7 @@ margin-bottom: 20px;
 
 .sub-nav  .current:after {
   position: relative;
-  top: 32px;
+  top: 27px;
   color: #2196F3;
   background-color: rgba(33, 150, 243, 0.9);
   cursor: pointer;
@@ -1752,9 +1770,8 @@ top: 0;
 left: -26px;
 margin: 0;
 padding: 0;
-max-width: 16px;
+width: 16px;
 max-height: 12px;
-
 }
 .icon-phone {
 top: 0;
