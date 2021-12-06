@@ -779,15 +779,17 @@ color: #ffffff;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: baseline;
-  flex-basis: calc((33% - 93px)/3);
+  flex-basis: calc((100% - 93px)/3);
   margin-right: 93px;
-  
 }
 .block .division-block:last-child {
   margin-right: 0px;
 }
-.block .division-block:nth-child(even) {
- margin-left: -33px;
+.container .contact {
+  margin-right: 0px;
+}
+.block .division-block:first-child {
+  margin-right: 70px;
 }
 .link-icon img {
   display: block;
@@ -804,12 +806,11 @@ color: #ffffff;
   justify-content: center;
 }
 .link-icon {
-  display: inline-block;
+  display: inline-flex;
   width: 44px;
   height: 44px;
   margin: 0;
   padding: 0;
-  display: flex;
   align-items: center;
   justify-content: center;
   list-style:none;
@@ -823,6 +824,9 @@ color: #ffffff;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-delay: 500ms;
+}
+.icon-4 {
+  margin-right: 0px;
 }
 .bottom-list-icon li a {
   margin-top: 20px;
@@ -843,10 +847,14 @@ font-size: 14px;
 line-height: 1,72; 
 text-transform: uppercase;
 }
+.block .block-icon .bottom-list-icon {
+  display: flex;
+  flex-direction: row;
+}
 /* Input footer*\ style */
  .area-mail {
   width: 358px;
-  height: 54px;
+  height: 50px;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2F303A;
