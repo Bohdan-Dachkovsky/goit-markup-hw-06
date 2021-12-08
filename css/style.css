@@ -1187,8 +1187,12 @@ letter-spacing: 0,3;
 text-align: center;
 transition-property: background-color;
 transition-duration: 250ms ;
-transition-timing-function: linear;
-animation-delay: 1000ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.titles .btn-option {
+transition-property: background-color, color;
+transition-duration: 250ms ;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
  .button .btn-option {
   font-family: Roboto;
@@ -1199,7 +1203,6 @@ animation-delay: 1000ms;
   letter-spacing: 0.03em;
   color:#212121;
   background-color: #F5F4FA;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .titles .btn-option::-moz-focus-inner,
 .titles .btn-option::-moz-focus-outer {
@@ -1209,7 +1212,7 @@ animation-delay: 1000ms;
 .titles .btn-option:focus {
 box-shadow: 0px 2px 2px 0px #00000012;
 background-color: var(--radical-light-color);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 color: #ffffff;
 
 }
