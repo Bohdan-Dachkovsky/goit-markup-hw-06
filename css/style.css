@@ -196,7 +196,7 @@ fill: #2196f3;
 .mail .list-mail:hover {
 fill: #2196f3;
 }
-.list-tel svg {
+.item .list-tel svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Add style focus for adittional block */
@@ -1942,7 +1942,7 @@ position: relative;
 }
 .list-tel {
 position: relative;
-
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail {
 position: absolute;
