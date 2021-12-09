@@ -807,6 +807,16 @@ color: #ffffff;
   display: block;
   position: relative;
 }
+.form-check button {
+ transition-property: color, background-color, box-shadow;
+ transition-duration: 250ms ;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.form-check button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(24, 140, 232, 1);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0,15);
+}
 .below-icons {
   width: 20px;
   height: 20px;
