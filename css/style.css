@@ -872,6 +872,8 @@ text-transform: uppercase;
   border-radius: 4px;
   margin-right: 12px;
   margin-top: 20px;
+  padding-left: 15px;
+  color: rgba(154, 155, 155, 1);
 }
 .sign-up:hover {
 box-shadow: 0px 4px 4px 0px #00000026;
@@ -904,6 +906,8 @@ box-shadow: 0px 4px 4px 0px #00000026;
 }
 .string {
   display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
 }
 .picture img {
   position: relative;
@@ -1700,6 +1704,7 @@ input {
 .modal-button-close svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-button-close:hover svg {
   fill: var(--radical-light-color);
 }
